@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>음악 추천</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>기분별 음악 추천</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎵 기분별 음악 추천</h1>
+  <p>오늘 느끼는 감정을 여러 개 선택한 후, "음악 추천받기" 버튼을 눌러주세요!</p>
+
+  <div id="mood-selection">
+    <h2>😊 행복 계열</h2>
+    <label><input type="checkbox" value="행복"> 행복</label>
+    <label><input type="checkbox" value="설렘"> 설렘</label>
+    <label><input type="checkbox" value="신남"> 신남</label>
+
+    <h2>😌 차분 계열</h2>
+    <label><input type="checkbox" value="차분"> 차분</label>
+    <label><input type="checkbox" value="편안"> 편안</label>
+
+    <h2>😢 슬픔 계열</h2>
+    <label><input type="checkbox" value="슬픔"> 슬픔</label>
+    <label><input type="checkbox" value="우울"> 우울</label>
+  </div>
+
+  <button onclick="recommendMusic()">🎶 음악 추천받기</button>
+
+  <h2>추천 음악 (2000~2010년대 2곡 + 2020년대 3곡)</h2>
+  <div id="recommendations"></div>
+
+  <h2>즐겨찾기 목록</h2>
+  <div id="favorites"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
